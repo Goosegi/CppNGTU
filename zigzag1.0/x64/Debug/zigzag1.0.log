@@ -1,8 +1,6 @@
 ﻿  application.cpp
-C:\Code\VS C++\zigzagProgramm\zigzag1.0\application.cpp(24,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  inputData.cpp
+C:\Code\VS C++\zigzagProgramm\zigzag1.0\application.cpp(23,11): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
   main.cpp
-  outputData.cpp
   test.cpp
   Создание кода...
   zigzag1.0.vcxproj -> C:\Code\VS C++\zigzagProgramm\zigzag1.0\x64\Debug\zigzag1.0.exe

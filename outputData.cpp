@@ -1,6 +1,6 @@
 #include "outputData.h"
 
-void printResults(const OutputData& outputData) {
+void printResults(OutputData& outputData) {
     if (outputData.isZigzag) {
         std::cout << "\n Массив является зигзагом." << std::endl;
     }

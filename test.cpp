@@ -9,24 +9,23 @@
 std::vector<int> generateRandomArray(int size, int minValue, int maxValue) {
     std::vector<int> array(size);
     for (int i = 0; i < size; ++i) {
-        array[i] = rand() % (maxValue - minValue + 1) + minValue; // Генерация случайного числа в диапазоне
+        array[i] = rand() % (maxValue - minValue + 1) + minValue;
     }
     return array;
 }
 
-// Функция для выполнения тестов
 void runTests(int numberOfTests) {
-    srand(static_cast<unsigned int>(time(0))); // Установка начального значения генератора случайных чисел
+    srand(static_cast<unsigned int>(time(0)));
 
     for (int i = 0; i < numberOfTests; ++i) {
-        int size = rand() % 10 + 2;
+        int size = rand() % 10 + 1;
         std::vector<int> testArray = generateRandomArray(size, 1, 1000);
 
         Application app;
         app.inputData.array = testArray;
         app.inputData.size = size;
 
-        app.process(); // Обработка данных
+        process(app); // Обработка данных
 
         std::cout << "Тест " << (i + 1) << ": Массив: ";
         for (int num : testArray) {

@@ -5,7 +5,7 @@
 
 struct InputData {
     std::vector<int> array;
-    int size;
+    int size = 0;
 };
 
 

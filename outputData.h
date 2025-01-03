@@ -4,12 +4,10 @@
 #include <iostream>
 
 struct OutputData {
-    bool isZigzag;
-    int position;
-
-    OutputData() : isZigzag(false), position(-1) {}
+    bool isZigzag = false;
+    int position = -1;
 };
 
-void printResults(const OutputData& outputData);
+void printResults(OutputData& outputData);
 
 #endif

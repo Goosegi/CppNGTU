@@ -1,20 +1,23 @@
 #include <iostream>
 #include "inputData.h"
 #include "application.h"
+#include "outputData.h"
 
-void Application::input() {
-    readInputData(inputData);
+void input(Application& app) {
+    readInputData(app.inputData);
 }
 
-void Application::process() {
+void process(Application& app) {
     int position = -1;
-    outputData.isZigzag = isZigzag(inputData.array, position);
-    outputData.position = position;
+    app.outputData.isZigzag = isZigzag(app.inputData.array, position);
+    app.outputData.position = position;
 }
 
-void Application::output() {
-    printResults(outputData);
+void output(Application& app) {
+    printResults(app.outputData);
 }
+
+
 
 bool isZigzag(const std::vector<int>& arr, int& pos) {
     int n = arr.size();

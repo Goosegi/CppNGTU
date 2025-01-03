@@ -13,9 +13,9 @@ int main() {
     runTests(numberOfTests);
 
 
-    app.input();     // Ввод данных
-    app.process();   // Обработка данных
-    app.output();    // Вывод результатов
+    input(app);     // Ввод данных
+    process(app);   // Обработка данных
+    output(app);    // Вывод результатов
 
     return 0;
 }

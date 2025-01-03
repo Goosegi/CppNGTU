@@ -8,14 +8,11 @@
 struct Application {
     InputData inputData;
     OutputData outputData;
-
-    Application() {}
-
-    void input();
-    void process();
-    void output();
 };
 
+void input(Application& app);
+void process(Application& app);
+void output(Application& app);
 bool isZigzag(const std::vector<int>& arr, int& pos);
 
 #endif
